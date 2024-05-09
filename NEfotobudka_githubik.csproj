@@ -60,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ceo\CEO_company_management.resx">
+      <DependentUpon>CEO_company_management.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ceo\CEO_menu.resx">
       <DependentUpon>CEO_menu.cs</DependentUpon>
     </EmbeddedResource>

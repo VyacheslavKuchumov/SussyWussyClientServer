@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Vyacheslav\\Documents\\GitHub\\SussyWussyClientServer\\",
+  "WorkspaceRootPath": "C:\\Users\\Abobus\\Documents\\GitHub\\SussyWussyClientServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2DF71257-45E0-418A-BE21-E6AB619A7F96}|NEfotobudka_githubik.csproj|c:\\users\\vyacheslav\\documents\\github\\sussywussyclientserver\\ceo\\ceo_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2DF71257-45E0-418A-BE21-E6AB619A7F96}|NEfotobudka_githubik.csproj|c:\\users\\abobus\\documents\\github\\sussywussyclientserver\\ceo\\ceo_company_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2DF71257-45E0-418A-BE21-E6AB619A7F96}|NEfotobudka_githubik.csproj|solutionrelative:ceo\\ceo_company_management.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DF71257-45E0-418A-BE21-E6AB619A7F96}|NEfotobudka_githubik.csproj|c:\\users\\abobus\\documents\\github\\sussywussyclientserver\\ceo\\ceo_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2DF71257-45E0-418A-BE21-E6AB619A7F96}|NEfotobudka_githubik.csproj|solutionrelative:ceo\\ceo_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DF71257-45E0-418A-BE21-E6AB619A7F96}|NEfotobudka_githubik.csproj|c:\\users\\vyacheslav\\documents\\github\\sussywussyclientserver\\ceo\\ceo_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2DF71257-45E0-418A-BE21-E6AB619A7F96}|NEfotobudka_githubik.csproj|C:\\Users\\Abobus\\Documents\\GitHub\\SussyWussyClientServer\\ceo\\ceo_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DF71257-45E0-418A-BE21-E6AB619A7F96}|NEfotobudka_githubik.csproj|solutionrelative:ceo\\ceo_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DF71257-45E0-418A-BE21-E6AB619A7F96}|NEfotobudka_githubik.csproj|c:\\users\\vyacheslav\\documents\\github\\sussywussyclientserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2DF71257-45E0-418A-BE21-E6AB619A7F96}|NEfotobudka_githubik.csproj|C:\\Users\\Abobus\\Documents\\GitHub\\SussyWussyClientServer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DF71257-45E0-418A-BE21-E6AB619A7F96}|NEfotobudka_githubik.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,15 +26,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "CEO_company_management.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Abobus\\Documents\\GitHub\\SussyWussyClientServer\\ceo\\CEO_company_management.cs",
+              "RelativeDocumentMoniker": "ceo\\CEO_company_management.cs",
+              "ToolTip": "C:\\Users\\Abobus\\Documents\\GitHub\\SussyWussyClientServer\\ceo\\CEO_company_management.cs [Design]",
+              "RelativeToolTip": "ceo\\CEO_company_management.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T16:12:02.919Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CEO_menu.cs",
-              "DocumentMoniker": "C:\\Users\\Vyacheslav\\Documents\\GitHub\\SussyWussyClientServer\\ceo\\CEO_menu.cs",
+              "DocumentMoniker": "C:\\Users\\Abobus\\Documents\\GitHub\\SussyWussyClientServer\\ceo\\CEO_menu.cs",
               "RelativeDocumentMoniker": "ceo\\CEO_menu.cs",
-              "ToolTip": "C:\\Users\\Vyacheslav\\Documents\\GitHub\\SussyWussyClientServer\\ceo\\CEO_menu.cs",
+              "ToolTip": "C:\\Users\\Abobus\\Documents\\GitHub\\SussyWussyClientServer\\ceo\\CEO_menu.cs",
               "RelativeToolTip": "ceo\\CEO_menu.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAmwBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -39,24 +55,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Vyacheslav\\Documents\\GitHub\\SussyWussyClientServer\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Abobus\\Documents\\GitHub\\SussyWussyClientServer\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Vyacheslav\\Documents\\GitHub\\SussyWussyClientServer\\Program.cs",
+              "ToolTip": "C:\\Users\\Abobus\\Documents\\GitHub\\SussyWussyClientServer\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAcwBUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T14:07:48.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T14:07:48.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CEO_menu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Vyacheslav\\Documents\\GitHub\\SussyWussyClientServer\\ceo\\CEO_menu.cs",
+              "DocumentMoniker": "C:\\Users\\Abobus\\Documents\\GitHub\\SussyWussyClientServer\\ceo\\CEO_menu.cs",
               "RelativeDocumentMoniker": "ceo\\CEO_menu.cs",
-              "ToolTip": "C:\\Users\\Vyacheslav\\Documents\\GitHub\\SussyWussyClientServer\\ceo\\CEO_menu.cs [Design]",
+              "ToolTip": "C:\\Users\\Abobus\\Documents\\GitHub\\SussyWussyClientServer\\ceo\\CEO_menu.cs [Design]",
               "RelativeToolTip": "ceo\\CEO_menu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T14:07:38.561Z",

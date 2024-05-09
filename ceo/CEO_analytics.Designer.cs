@@ -34,10 +34,8 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -45,6 +43,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -116,10 +116,10 @@
             // 
             this.flowLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel3.Controls.Add(this.label2);
-            this.flowLayoutPanel3.Controls.Add(this.textBox1);
+            this.flowLayoutPanel3.Controls.Add(this.dateTimePicker1);
             this.flowLayoutPanel3.Controls.Add(this.splitter1);
             this.flowLayoutPanel3.Controls.Add(this.label3);
-            this.flowLayoutPanel3.Controls.Add(this.textBox2);
+            this.flowLayoutPanel3.Controls.Add(this.dateTimePicker2);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(42, 2);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
@@ -135,13 +135,6 @@
             this.label2.Size = new System.Drawing.Size(89, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Начало периода";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(3, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
             // 
             // splitter1
             // 
@@ -159,13 +152,6 @@
             this.label3.Size = new System.Drawing.Size(83, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Конец периода";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(3, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
             // 
             // flowLayoutPanel1
             // 
@@ -240,6 +226,20 @@
             this.dataGridView1.Size = new System.Drawing.Size(474, 160);
             this.dataGridView1.TabIndex = 7;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(3, 16);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(150, 20);
+            this.dateTimePicker1.TabIndex = 9;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(3, 71);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(150, 20);
+            this.dateTimePicker2.TabIndex = 10;
+            // 
             // CEO_analytics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,10 +268,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -279,5 +277,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }

@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NEfotobudka_githubik
+namespace NEfotobudka_githubik.ceo
 {
-    public partial class Form1 : Form
+    public partial class CEO_menu : Form
     {
-        public Form1()
+        public CEO_menu()
         {
             InitializeComponent();
         }
+
+
     }
 }

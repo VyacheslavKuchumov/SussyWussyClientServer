@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\Admin_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\Admin_menu.Designer.cs">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="ceo\CEO_analytics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,18 @@
     </Compile>
     <Compile Include="ceo\CEO_company_management.Designer.cs">
       <DependentUpon>CEO_company_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ceo\CEO_employee_management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ceo\CEO_employee_management.Designer.cs">
+      <DependentUpon>CEO_employee_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ceo\CEO_management_misc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ceo\CEO_management_misc.Designer.cs">
+      <DependentUpon>CEO_management_misc.cs</DependentUpon>
     </Compile>
     <Compile Include="ceo\CEO_menu.cs">
       <SubType>Form</SubType>
@@ -70,16 +88,46 @@
     <Compile Include="ceo\CEO_reports.Designer.cs">
       <DependentUpon>CEO_reports.cs</DependentUpon>
     </Compile>
+    <Compile Include="ceo\CEO_suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ceo\CEO_suppliers.Designer.cs">
+      <DependentUpon>CEO_suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="photo\Photo_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="photo\Photo_menu.Designer.cs">
+      <DependentUpon>Photo_menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="admin\Admin_menu.resx">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ceo\CEO_analytics.resx">
+      <DependentUpon>CEO_analytics.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ceo\CEO_company_management.resx">
       <DependentUpon>CEO_company_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ceo\CEO_employee_management.resx">
+      <DependentUpon>CEO_employee_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ceo\CEO_management_misc.resx">
+      <DependentUpon>CEO_management_misc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ceo\CEO_menu.resx">
       <DependentUpon>CEO_menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ceo\CEO_reports.resx">
       <DependentUpon>CEO_reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ceo\CEO_suppliers.resx">
+      <DependentUpon>CEO_suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="photo\Photo_menu.resx">
+      <DependentUpon>Photo_menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

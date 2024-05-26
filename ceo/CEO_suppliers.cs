@@ -16,5 +16,14 @@ namespace NEfotobudka_githubik.ceo
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            CEO_menu form = new CEO_menu();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
     }
 }

@@ -21,5 +21,41 @@ namespace NEfotobudka_githubik.ceo
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            CEO_menu form = new CEO_menu();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CEO_analytics form = new CEO_analytics();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CEO_reports form = new CEO_reports();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CEO_management_misc form = new CEO_management_misc();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
     }
 }

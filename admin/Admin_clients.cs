@@ -10,20 +10,21 @@ using System.Windows.Forms;
 
 namespace NEfotobudka_githubik.admin
 {
-    public partial class Admin_menu : Form
+    public partial class Admin_clients : Form
     {
-        public Admin_menu()
+        public Admin_clients()
         {
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            Login form = new Login();
-            // Show the second form
-            form.Show();
-            // Optionally, hide the current form
-            this.Hide();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

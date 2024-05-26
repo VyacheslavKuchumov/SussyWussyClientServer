@@ -50,5 +50,14 @@ namespace NEfotobudka_githubik.ceo
             // Optionally, hide the current form
             this.Hide();
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Login form = new Login();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
     }
 }

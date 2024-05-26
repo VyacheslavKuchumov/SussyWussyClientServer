@@ -1,4 +1,5 @@
-﻿using NEfotobudka_githubik.ceo;
+﻿using NEfotobudka_githubik.admin;
+using NEfotobudka_githubik.ceo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace NEfotobudka_githubik
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CEO_menu());
+            Application.Run(new Login());
         }
     }
 }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\Admin_clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\Admin_clients.Designer.cs">
+      <DependentUpon>Admin_clients.cs</DependentUpon>
+    </Compile>
     <Compile Include="admin\Admin_menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,12 @@
     <Compile Include="ceo\CEO_suppliers.Designer.cs">
       <DependentUpon>CEO_suppliers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="photo\Photo_menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +114,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="admin\Admin_clients.resx">
+      <DependentUpon>Admin_clients.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admin\Admin_menu.resx">
       <DependentUpon>Admin_menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ceo\CEO_suppliers.resx">
       <DependentUpon>CEO_suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="photo\Photo_menu.resx">
       <DependentUpon>Photo_menu.cs</DependentUpon>

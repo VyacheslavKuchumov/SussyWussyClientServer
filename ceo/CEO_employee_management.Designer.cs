@@ -34,21 +34,21 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxSurname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxOtchestvo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxPhotostudio = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBoxDOB = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBoxPosition = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -84,6 +84,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.15927F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 1000);
             this.tableLayoutPanel1.TabIndex = 9;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // flowLayoutPanel2
             // 
@@ -129,21 +130,21 @@
             // 
             this.flowLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel3.Controls.Add(this.label5);
-            this.flowLayoutPanel3.Controls.Add(this.textBox4);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxID);
             this.flowLayoutPanel3.Controls.Add(this.label2);
-            this.flowLayoutPanel3.Controls.Add(this.textBox2);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxSurname);
             this.flowLayoutPanel3.Controls.Add(this.label3);
-            this.flowLayoutPanel3.Controls.Add(this.textBox1);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxName);
             this.flowLayoutPanel3.Controls.Add(this.label4);
-            this.flowLayoutPanel3.Controls.Add(this.textBox3);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxOtchestvo);
             this.flowLayoutPanel3.Controls.Add(this.label7);
-            this.flowLayoutPanel3.Controls.Add(this.textBox5);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxPhotostudio);
             this.flowLayoutPanel3.Controls.Add(this.label6);
-            this.flowLayoutPanel3.Controls.Add(this.textBox6);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxDOB);
             this.flowLayoutPanel3.Controls.Add(this.label8);
-            this.flowLayoutPanel3.Controls.Add(this.textBox7);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxPosition);
             this.flowLayoutPanel3.Controls.Add(this.label9);
-            this.flowLayoutPanel3.Controls.Add(this.textBox8);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxPhone);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(63, 3);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
@@ -160,13 +161,13 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Код ";
             // 
-            // textBox4
+            // textBoxID
             // 
-            this.textBox4.Location = new System.Drawing.Point(4, 25);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(148, 26);
-            this.textBox4.TabIndex = 16;
+            this.textBoxID.Location = new System.Drawing.Point(4, 25);
+            this.textBoxID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(148, 26);
+            this.textBoxID.TabIndex = 16;
             // 
             // label2
             // 
@@ -179,13 +180,13 @@
             this.label2.Text = "Фамилия";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox2
+            // textBoxSurname
             // 
-            this.textBox2.Location = new System.Drawing.Point(4, 81);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 26);
-            this.textBox2.TabIndex = 12;
+            this.textBoxSurname.Location = new System.Drawing.Point(4, 81);
+            this.textBoxSurname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxSurname.Name = "textBoxSurname";
+            this.textBoxSurname.Size = new System.Drawing.Size(148, 26);
+            this.textBoxSurname.TabIndex = 12;
             // 
             // label3
             // 
@@ -197,13 +198,13 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Имя";
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(4, 137);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 26);
-            this.textBox1.TabIndex = 11;
+            this.textBoxName.Location = new System.Drawing.Point(4, 137);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(148, 26);
+            this.textBoxName.TabIndex = 11;
             // 
             // label4
             // 
@@ -215,13 +216,13 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "Отчество";
             // 
-            // textBox3
+            // textBoxOtchestvo
             // 
-            this.textBox3.Location = new System.Drawing.Point(4, 193);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(148, 26);
-            this.textBox3.TabIndex = 13;
+            this.textBoxOtchestvo.Location = new System.Drawing.Point(4, 193);
+            this.textBoxOtchestvo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxOtchestvo.Name = "textBoxOtchestvo";
+            this.textBoxOtchestvo.Size = new System.Drawing.Size(148, 26);
+            this.textBoxOtchestvo.TabIndex = 13;
             // 
             // label7
             // 
@@ -233,13 +234,13 @@
             this.label7.TabIndex = 20;
             this.label7.Text = "Фотостудия";
             // 
-            // textBox5
+            // textBoxPhotostudio
             // 
-            this.textBox5.Location = new System.Drawing.Point(4, 249);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(148, 26);
-            this.textBox5.TabIndex = 17;
+            this.textBoxPhotostudio.Location = new System.Drawing.Point(4, 249);
+            this.textBoxPhotostudio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPhotostudio.Name = "textBoxPhotostudio";
+            this.textBoxPhotostudio.Size = new System.Drawing.Size(148, 26);
+            this.textBoxPhotostudio.TabIndex = 17;
             // 
             // label6
             // 
@@ -251,13 +252,13 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "Дата рождения";
             // 
-            // textBox6
+            // textBoxDOB
             // 
-            this.textBox6.Location = new System.Drawing.Point(4, 305);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(148, 26);
-            this.textBox6.TabIndex = 19;
+            this.textBoxDOB.Location = new System.Drawing.Point(4, 305);
+            this.textBoxDOB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxDOB.Name = "textBoxDOB";
+            this.textBoxDOB.Size = new System.Drawing.Size(148, 26);
+            this.textBoxDOB.TabIndex = 19;
             // 
             // label8
             // 
@@ -269,13 +270,13 @@
             this.label8.TabIndex = 22;
             this.label8.Text = "Должность";
             // 
-            // textBox7
+            // textBoxPosition
             // 
-            this.textBox7.Location = new System.Drawing.Point(4, 361);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(148, 26);
-            this.textBox7.TabIndex = 21;
+            this.textBoxPosition.Location = new System.Drawing.Point(4, 361);
+            this.textBoxPosition.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPosition.Name = "textBoxPosition";
+            this.textBoxPosition.Size = new System.Drawing.Size(148, 26);
+            this.textBoxPosition.TabIndex = 21;
             // 
             // label9
             // 
@@ -287,13 +288,13 @@
             this.label9.TabIndex = 23;
             this.label9.Text = "Телефон";
             // 
-            // textBox8
+            // textBoxPhone
             // 
-            this.textBox8.Location = new System.Drawing.Point(4, 417);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(148, 26);
-            this.textBox8.TabIndex = 24;
+            this.textBoxPhone.Location = new System.Drawing.Point(4, 417);
+            this.textBoxPhone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPhone.Name = "textBoxPhone";
+            this.textBoxPhone.Size = new System.Drawing.Size(148, 26);
+            this.textBoxPhone.TabIndex = 24;
             // 
             // flowLayoutPanel1
             // 
@@ -317,6 +318,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Поиск по фамилии";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -326,6 +328,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Принять на работу";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -335,6 +338,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Уволить по коду";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button5
             // 
@@ -374,6 +378,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CEO_employee_management";
             this.Text = "CEO_employee_management";
+            this.Load += new System.EventHandler(this.CEO_employee_management_Load_1);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
@@ -402,19 +407,19 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxSurname;
+        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxOtchestvo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxPhotostudio;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBoxDOB;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBoxPosition;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBoxPhone;
     }
 }

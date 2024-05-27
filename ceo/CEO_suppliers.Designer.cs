@@ -54,6 +54,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button6 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -276,6 +277,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.flowLayoutPanel1.Controls.Add(this.button6);
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Controls.Add(this.button3);
@@ -284,22 +286,22 @@
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(419, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(230, 328);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(230, 387);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Location = new System.Drawing.Point(3, 69);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(225, 60);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Поиск по названию";
+            this.button1.Text = "Поиск поставщика по названию";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 69);
+            this.button2.Location = new System.Drawing.Point(3, 135);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(225, 71);
             this.button2.TabIndex = 1;
@@ -309,7 +311,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(3, 146);
+            this.button3.Location = new System.Drawing.Point(3, 212);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(225, 74);
             this.button3.TabIndex = 2;
@@ -319,7 +321,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(3, 226);
+            this.button5.Location = new System.Drawing.Point(3, 292);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(225, 60);
             this.button5.TabIndex = 4;
@@ -345,6 +347,16 @@
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(711, 246);
             this.dataGridView1.TabIndex = 7;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(3, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(225, 60);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Оформить поставку";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // CEO_suppliers
             // 
@@ -396,5 +408,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button6;
     }
 }

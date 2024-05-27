@@ -41,9 +41,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBoxAdress = new System.Windows.Forms.TextBox();
+            this.textBoxWarehouse = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxSupplier = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,11 +54,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.splitter3 = new System.Windows.Forms.Splitter();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxEquip = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxQuanti = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -167,6 +167,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Оформить поставку";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button6
             // 
@@ -176,6 +177,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "Посмотреть содержание поставки по коду";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button3
             // 
@@ -183,8 +185,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(225, 74);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Добавить содержание поставки по коду";
+            this.button3.Text = "Добавить содержание поставки по коду поставки";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button5
             // 
@@ -230,13 +233,13 @@
             this.label9.TabIndex = 23;
             this.label9.Text = "Дата поставки";
             // 
-            // textBoxAdress
+            // textBoxWarehouse
             // 
-            this.textBoxAdress.Location = new System.Drawing.Point(4, 183);
-            this.textBoxAdress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxAdress.Name = "textBoxAdress";
-            this.textBoxAdress.Size = new System.Drawing.Size(148, 26);
-            this.textBoxAdress.TabIndex = 11;
+            this.textBoxWarehouse.Location = new System.Drawing.Point(4, 183);
+            this.textBoxWarehouse.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxWarehouse.Name = "textBoxWarehouse";
+            this.textBoxWarehouse.Size = new System.Drawing.Size(148, 26);
+            this.textBoxWarehouse.TabIndex = 11;
             // 
             // label7
             // 
@@ -248,13 +251,13 @@
             this.label7.TabIndex = 20;
             this.label7.Text = "Склад";
             // 
-            // textBoxName
+            // textBoxSupplier
             // 
-            this.textBoxName.Location = new System.Drawing.Point(4, 127);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(148, 26);
-            this.textBoxName.TabIndex = 12;
+            this.textBoxSupplier.Location = new System.Drawing.Point(4, 127);
+            this.textBoxSupplier.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxSupplier.Name = "textBoxSupplier";
+            this.textBoxSupplier.Size = new System.Drawing.Size(148, 26);
+            this.textBoxSupplier.TabIndex = 12;
             // 
             // label6
             // 
@@ -312,9 +315,9 @@
             this.flowLayoutPanel3.Controls.Add(this.label5);
             this.flowLayoutPanel3.Controls.Add(this.textBoxID);
             this.flowLayoutPanel3.Controls.Add(this.label6);
-            this.flowLayoutPanel3.Controls.Add(this.textBoxName);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxSupplier);
             this.flowLayoutPanel3.Controls.Add(this.label7);
-            this.flowLayoutPanel3.Controls.Add(this.textBoxAdress);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxWarehouse);
             this.flowLayoutPanel3.Controls.Add(this.label9);
             this.flowLayoutPanel3.Controls.Add(this.dateTimePicker1);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -329,11 +332,11 @@
             this.flowLayoutPanel4.Controls.Add(this.label3);
             this.flowLayoutPanel4.Controls.Add(this.splitter3);
             this.flowLayoutPanel4.Controls.Add(this.label8);
-            this.flowLayoutPanel4.Controls.Add(this.textBox3);
+            this.flowLayoutPanel4.Controls.Add(this.textBoxEquip);
             this.flowLayoutPanel4.Controls.Add(this.label10);
-            this.flowLayoutPanel4.Controls.Add(this.textBox4);
+            this.flowLayoutPanel4.Controls.Add(this.textBoxQuanti);
             this.flowLayoutPanel4.Controls.Add(this.label11);
-            this.flowLayoutPanel4.Controls.Add(this.textBox5);
+            this.flowLayoutPanel4.Controls.Add(this.textBoxPrice);
             this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel4.Location = new System.Drawing.Point(317, 3);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
@@ -370,13 +373,13 @@
             this.label8.TabIndex = 18;
             this.label8.Text = "Оборудование";
             // 
-            // textBox3
+            // textBoxEquip
             // 
-            this.textBox3.Location = new System.Drawing.Point(4, 71);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(148, 26);
-            this.textBox3.TabIndex = 12;
+            this.textBoxEquip.Location = new System.Drawing.Point(4, 71);
+            this.textBoxEquip.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxEquip.Name = "textBoxEquip";
+            this.textBoxEquip.Size = new System.Drawing.Size(148, 26);
+            this.textBoxEquip.TabIndex = 12;
             // 
             // label10
             // 
@@ -388,13 +391,13 @@
             this.label10.TabIndex = 20;
             this.label10.Text = "Количество";
             // 
-            // textBox4
+            // textBoxQuanti
             // 
-            this.textBox4.Location = new System.Drawing.Point(4, 127);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(148, 26);
-            this.textBox4.TabIndex = 11;
+            this.textBoxQuanti.Location = new System.Drawing.Point(4, 127);
+            this.textBoxQuanti.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxQuanti.Name = "textBoxQuanti";
+            this.textBoxQuanti.Size = new System.Drawing.Size(148, 26);
+            this.textBoxQuanti.TabIndex = 11;
             // 
             // label11
             // 
@@ -406,13 +409,13 @@
             this.label11.TabIndex = 23;
             this.label11.Text = "Стоимость за ед";
             // 
-            // textBox5
+            // textBoxPrice
             // 
-            this.textBox5.Location = new System.Drawing.Point(4, 183);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(148, 26);
-            this.textBox5.TabIndex = 24;
+            this.textBoxPrice.Location = new System.Drawing.Point(4, 183);
+            this.textBoxPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(148, 26);
+            this.textBoxPrice.TabIndex = 24;
             // 
             // dateTimePicker1
             // 
@@ -429,6 +432,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "Отменить поставку по коду";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -438,6 +442,7 @@
             this.button8.TabIndex = 7;
             this.button8.Text = "Удалить содержание поставки по названию оборудования";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // CEO_delivery
             // 
@@ -481,20 +486,20 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Splitter splitter3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxEquip;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxQuanti;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxPrice;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox textBoxSupplier;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBoxAdress;
+        private System.Windows.Forms.TextBox textBoxWarehouse;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button7;

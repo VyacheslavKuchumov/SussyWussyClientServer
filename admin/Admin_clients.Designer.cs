@@ -31,7 +31,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -74,8 +73,8 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.63483F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.36517F));
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -91,41 +90,32 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.flowLayoutPanel1.Controls.Add(this.button6);
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Controls.Add(this.button6);
             this.flowLayoutPanel1.Controls.Add(this.button3);
             this.flowLayoutPanel1.Controls.Add(this.button5);
-            this.flowLayoutPanel1.Controls.Add(this.button4);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(419, 3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(402, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(230, 328);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(296, 331);
             this.flowLayoutPanel1.TabIndex = 4;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(234, 69);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(225, 60);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Выйти";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(234, 3);
+            this.button5.Location = new System.Drawing.Point(3, 267);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(225, 60);
             this.button5.TabIndex = 4;
             this.button5.Text = "Назад";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(3, 215);
+            this.button3.Location = new System.Drawing.Point(3, 201);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(225, 74);
+            this.button3.Size = new System.Drawing.Size(225, 60);
             this.button3.TabIndex = 2;
             this.button3.Text = "Удалить по коду";
             this.button3.UseVisualStyleBackColor = true;
@@ -133,9 +123,9 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(3, 149);
+            this.button6.Location = new System.Drawing.Point(3, 3);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(225, 60);
+            this.button6.Size = new System.Drawing.Size(225, 58);
             this.button6.TabIndex = 5;
             this.button6.Text = "Оформить заказ";
             this.button6.UseVisualStyleBackColor = true;
@@ -143,7 +133,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 69);
+            this.button2.Location = new System.Drawing.Point(3, 121);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(225, 74);
             this.button2.TabIndex = 1;
@@ -153,9 +143,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Location = new System.Drawing.Point(3, 67);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 60);
+            this.button1.Size = new System.Drawing.Size(225, 48);
             this.button1.TabIndex = 0;
             this.button1.Text = "Поиск по фамилии";
             this.button1.UseVisualStyleBackColor = true;
@@ -177,9 +167,9 @@
             this.flowLayoutPanel3.Controls.Add(this.label6);
             this.flowLayoutPanel3.Controls.Add(this.textBoxEmail);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(63, 3);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(29, 3);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(230, 340);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(330, 340);
             this.flowLayoutPanel3.TabIndex = 5;
             // 
             // textBoxEmail
@@ -376,7 +366,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;

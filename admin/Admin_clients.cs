@@ -107,5 +107,14 @@ namespace NEfotobudka_githubik.admin
             dataGridView1.DataSource = dt;
             conn.Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Admin_menu form = new Admin_menu();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
     }
 }

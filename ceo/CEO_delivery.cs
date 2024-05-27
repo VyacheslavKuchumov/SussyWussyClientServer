@@ -77,7 +77,7 @@ namespace NEfotobudka_githubik.ceo
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-E1GMR9K;Initial Catalog=NE_photo_DB;Integrated Security=True");
             conn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Содержание_поставки WHERE Код_поставки = @id", conn);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Содержание_поставки_фикс WHERE Код_поставки = @id", conn);
             cmd.Parameters.AddWithValue("@id", textBoxID.Text);
             
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -91,7 +91,7 @@ namespace NEfotobudka_githubik.ceo
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-E1GMR9K;Initial Catalog=NE_photo_DB;Integrated Security=True");
             conn.Open();
-            SqlCommand cmd = new SqlCommand("INSERT INTO Содержание_поставки VALUES(@id, @equipment, @quantity, @price)", conn);
+            SqlCommand cmd = new SqlCommand("INSERT INTO Содержание_поставки_фикс VALUES(@id, @equipment, @quantity, @price)", conn);
             cmd.Parameters.AddWithValue("@id", textBoxID.Text);
             cmd.Parameters.AddWithValue("@equipment", textBoxEquip.Text);
             cmd.Parameters.AddWithValue("@quantity", textBoxQuanti.Text);
@@ -100,7 +100,7 @@ namespace NEfotobudka_githubik.ceo
 
             cmd.ExecuteNonQuery();
 
-            cmd = new SqlCommand("SELECT * FROM Содержание_поставки WHERE Код_поставки = @id", conn);
+            cmd = new SqlCommand("SELECT * FROM Содержание_поставки_фикс WHERE Код_поставки = @id", conn);
             cmd.Parameters.AddWithValue("@id", textBoxID.Text);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -150,12 +150,12 @@ namespace NEfotobudka_githubik.ceo
                 conn.Open();
 
 
-                SqlCommand cmd = new SqlCommand("DELETE FROM Содержание_поставки WHERE Код_оборудования = @id2 AND Код_поставки = @id", conn);
+                SqlCommand cmd = new SqlCommand("DELETE FROM Содержание_поставки_фикс WHERE Наименование_оборудования = @id2 AND Код_поставки = @id", conn);
                 cmd.Parameters.AddWithValue("@id", textBoxID.Text);
                 cmd.Parameters.AddWithValue("@id2", textBoxEquip.Text);
                 cmd.ExecuteNonQuery();
 
-                cmd = new SqlCommand("SELECT * FROM Содержание_поставки WHERE Код_поставки = @id", conn);
+                cmd = new SqlCommand("SELECT * FROM Содержание_поставки_фикс WHERE Код_поставки = @id", conn);
                 cmd.Parameters.AddWithValue("@id", textBoxID.Text);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -164,5 +164,17 @@ namespace NEfotobudka_githubik.ceo
                 conn.Close();
             }
     }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-E1GMR9K;Initial Catalog=NE_photo_DB;Integrated Security=True");
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Поставка", conn);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+            conn.Close();
+        }
     }
 }

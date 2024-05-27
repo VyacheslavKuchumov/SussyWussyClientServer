@@ -25,5 +25,14 @@ namespace NEfotobudka_githubik.admin
             // Optionally, hide the current form
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Admin_clients form = new Admin_clients();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
     }
 }

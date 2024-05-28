@@ -18,7 +18,7 @@ namespace NEfotobudka_githubik
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CEO_reports());
+            Application.Run(new Login());
         }
     }
 }

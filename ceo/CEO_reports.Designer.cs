@@ -118,10 +118,10 @@
             // 
             this.flowLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel3.Controls.Add(this.label2);
-            this.flowLayoutPanel3.Controls.Add(this.dateTimePicker2);
+            this.flowLayoutPanel3.Controls.Add(this.dateTimePicker1);
             this.flowLayoutPanel3.Controls.Add(this.splitter1);
             this.flowLayoutPanel3.Controls.Add(this.label3);
-            this.flowLayoutPanel3.Controls.Add(this.dateTimePicker1);
+            this.flowLayoutPanel3.Controls.Add(this.dateTimePicker2);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(63, 3);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
@@ -140,7 +140,7 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(4, 25);
+            this.dateTimePicker2.Location = new System.Drawing.Point(4, 106);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(223, 26);
@@ -167,7 +167,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(4, 106);
+            this.dateTimePicker1.Location = new System.Drawing.Point(4, 25);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(223, 26);
@@ -195,6 +195,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Кол-во выполненных заказов каждым из сотрудников за период";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -204,6 +205,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Кол-во поставок каждым из поставщиков за период";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -213,6 +215,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Кол-во заказов выполненных каждой фотостудией за период";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button5
             // 

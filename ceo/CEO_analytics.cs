@@ -59,7 +59,7 @@ namespace NEfotobudka_githubik.ceo
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-E1GMR9K;Initial Catalog=NE_photo_DB;Integrated Security=True");
             conn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT Код_фотографа, SUM(Количество*Стоимость_за_ед) AS Выручка FROM Содержание_заказа, Заказ WHERE (Дата_заказа BETWEEN @date1 AND @date2) AND Заказ.Код_заказа = Содержание_заказа.Код_заказа GROUP BY Код_фотографа", conn);
+            SqlCommand cmd = new SqlCommand("SELECT Сотрудник.Фамилия_сотрудника, SUM(Содержание_заказа.Количество * Содержание_заказа.Стоимость_за_ед) AS Выручка FROM    Содержание_заказа JOIN    Заказ ON Заказ.Код_заказа = Содержание_заказа.Код_заказа JOIN    Сотрудник ON Заказ.Код_фотографа = Сотрудник.Код_сотрудника WHERE     Заказ.Дата_заказа BETWEEN @date1 AND @date2 GROUP BY     Сотрудник.Фамилия_сотрудника ORDER BY Выручка DESC;", conn);
             cmd.Parameters.AddWithValue("@date1", dateTimePicker1.Value.ToString("yyyy-MM-dd"));
             cmd.Parameters.AddWithValue("@date2", dateTimePicker2.Value.ToString("yyyy-MM-dd"));
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);

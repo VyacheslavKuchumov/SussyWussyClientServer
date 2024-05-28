@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NEfotobudka_githubik.ceo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +30,15 @@ namespace NEfotobudka_githubik.admin
         private void button1_Click(object sender, EventArgs e)
         {
             Admin_clients form = new Admin_clients();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Admin_misc form = new Admin_misc();
             // Show the second form
             form.Show();
             // Optionally, hide the current form

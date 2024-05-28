@@ -58,6 +58,12 @@
     <Compile Include="admin\Admin_menu.Designer.cs">
       <DependentUpon>Admin_menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="admin\Admin_misc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\Admin_misc.Designer.cs">
+      <DependentUpon>Admin_misc.cs</DependentUpon>
+    </Compile>
     <Compile Include="admin\Admin_orders.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="admin\Admin_menu.resx">
       <DependentUpon>Admin_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\Admin_misc.resx">
+      <DependentUpon>Admin_misc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="admin\Admin_orders.resx">
       <DependentUpon>Admin_orders.cs</DependentUpon>

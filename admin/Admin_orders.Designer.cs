@@ -150,7 +150,7 @@
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(592, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(475, 322);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(475, 301);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // button1

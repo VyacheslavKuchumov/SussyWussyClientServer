@@ -39,6 +39,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
@@ -59,12 +60,11 @@
             this.textBoxClient = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxPhotostudio = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxPhotographer = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBoxPhotographer = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -91,9 +91,9 @@
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.95404F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.00675F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.12036F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 920);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.72754F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.3919F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 1044);
             this.tableLayoutPanel1.TabIndex = 12;
             // 
             // flowLayoutPanel2
@@ -127,13 +127,13 @@
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(62, 186);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(62, 207);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1070, 398);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1070, 513);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
             // flowLayoutPanel1
@@ -167,7 +167,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(3, 69);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(225, 71);
+            this.button2.Size = new System.Drawing.Size(225, 56);
             this.button2.TabIndex = 1;
             this.button2.Text = "Оформить заказ";
             this.button2.UseVisualStyleBackColor = true;
@@ -175,7 +175,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(3, 146);
+            this.button6.Location = new System.Drawing.Point(3, 131);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(225, 60);
             this.button6.TabIndex = 5;
@@ -185,9 +185,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(3, 212);
+            this.button3.Location = new System.Drawing.Point(3, 197);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(225, 74);
+            this.button3.Size = new System.Drawing.Size(225, 62);
             this.button3.TabIndex = 2;
             this.button3.Text = "Добавить содержание заказа по коду заказа";
             this.button3.UseVisualStyleBackColor = true;
@@ -197,7 +197,7 @@
             // 
             this.button7.Location = new System.Drawing.Point(234, 3);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(225, 74);
+            this.button7.Size = new System.Drawing.Size(225, 60);
             this.button7.TabIndex = 6;
             this.button7.Text = "Отменить заказ по коду";
             this.button7.UseVisualStyleBackColor = true;
@@ -205,17 +205,27 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(234, 83);
+            this.button8.Location = new System.Drawing.Point(234, 69);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(225, 74);
+            this.button8.Size = new System.Drawing.Size(225, 58);
             this.button8.TabIndex = 7;
             this.button8.Text = "Удалить содержание заказа по названию услуги";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(234, 133);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(225, 49);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "Обновить";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(234, 243);
+            this.button5.Location = new System.Drawing.Point(234, 188);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(225, 60);
             this.button5.TabIndex = 4;
@@ -226,15 +236,15 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.2461F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.7539F));
             this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel4, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel3, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(577, 392);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(577, 497);
             this.tableLayoutPanel3.TabIndex = 5;
             // 
             // flowLayoutPanel4
@@ -249,9 +259,9 @@
             this.flowLayoutPanel4.Controls.Add(this.label11);
             this.flowLayoutPanel4.Controls.Add(this.textBoxPrice);
             this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(317, 3);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(330, 3);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(230, 302);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(230, 443);
             this.flowLayoutPanel4.TabIndex = 7;
             // 
             // label3
@@ -344,9 +354,9 @@
             this.flowLayoutPanel3.Controls.Add(this.label9);
             this.flowLayoutPanel3.Controls.Add(this.dateTimePicker1);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(19, 3);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(13, 3);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(249, 352);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(287, 491);
             this.flowLayoutPanel3.TabIndex = 6;
             // 
             // label2
@@ -423,43 +433,6 @@
             this.textBoxPhotostudio.Size = new System.Drawing.Size(148, 26);
             this.textBoxPhotostudio.TabIndex = 11;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(4, 270);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 20);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "Дата заказа";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(3, 293);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
-            this.dateTimePicker1.TabIndex = 27;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(62, 594);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(1070, 321);
-            this.dataGridView1.TabIndex = 7;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(234, 163);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(225, 74);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Обновить";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -479,11 +452,38 @@
             this.textBoxPhotographer.Size = new System.Drawing.Size(148, 26);
             this.textBoxPhotographer.TabIndex = 28;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(4, 270);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(103, 20);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Дата заказа";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(3, 293);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(174, 26);
+            this.dateTimePicker1.TabIndex = 27;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(62, 730);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.Size = new System.Drawing.Size(1070, 309);
+            this.dataGridView1.TabIndex = 7;
+            // 
             // Admin_orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 920);
+            this.ClientSize = new System.Drawing.Size(1200, 1044);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Admin_orders";
             this.Text = "Admin_orders";

@@ -48,13 +48,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button6 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -79,8 +78,8 @@
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.95404F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.8867F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.15927F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.16873F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.95838F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1200, 920);
             this.tableLayoutPanel1.TabIndex = 10;
             // 
@@ -121,7 +120,7 @@
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(712, 469);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(712, 435);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
             // flowLayoutPanel3
@@ -142,9 +141,9 @@
             this.flowLayoutPanel3.Controls.Add(this.label9);
             this.flowLayoutPanel3.Controls.Add(this.textBoxPhone);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(63, 3);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(230, 463);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(350, 429);
             this.flowLayoutPanel3.TabIndex = 5;
             // 
             // label5
@@ -282,18 +281,27 @@
             this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Controls.Add(this.button3);
             this.flowLayoutPanel1.Controls.Add(this.button5);
-            this.flowLayoutPanel1.Controls.Add(this.button4);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(419, 3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(374, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(230, 387);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(319, 387);
             this.flowLayoutPanel1.TabIndex = 4;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(3, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(316, 48);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Оформить поставку";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 69);
+            this.button1.Location = new System.Drawing.Point(3, 57);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 60);
+            this.button1.Size = new System.Drawing.Size(316, 39);
             this.button1.TabIndex = 0;
             this.button1.Text = "Поиск поставщика по названию";
             this.button1.UseVisualStyleBackColor = true;
@@ -301,9 +309,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 135);
+            this.button2.Location = new System.Drawing.Point(3, 102);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(225, 71);
+            this.button2.Size = new System.Drawing.Size(316, 50);
             this.button2.TabIndex = 1;
             this.button2.Text = "Заключить договор";
             this.button2.UseVisualStyleBackColor = true;
@@ -311,9 +319,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(3, 212);
+            this.button3.Location = new System.Drawing.Point(3, 158);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(225, 74);
+            this.button3.Size = new System.Drawing.Size(316, 45);
             this.button3.TabIndex = 2;
             this.button3.Text = "Расторгнуть договор по коду";
             this.button3.UseVisualStyleBackColor = true;
@@ -321,42 +329,23 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(3, 292);
+            this.button5.Location = new System.Drawing.Point(3, 209);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(225, 60);
+            this.button5.Size = new System.Drawing.Size(316, 60);
             this.button5.TabIndex = 4;
             this.button5.Text = "Назад";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(234, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(225, 60);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Выйти";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(244, 665);
+            this.dataGridView1.Location = new System.Drawing.Point(244, 631);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(711, 246);
+            this.dataGridView1.Size = new System.Drawing.Size(711, 275);
             this.dataGridView1.TabIndex = 7;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(3, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(225, 60);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Оформить поставку";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // CEO_suppliers
             // 
@@ -406,7 +395,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button6;
     }

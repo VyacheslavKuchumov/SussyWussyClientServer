@@ -34,5 +34,14 @@ namespace NEfotobudka_githubik.photo
             // Optionally, hide the current form
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Photo_misc form = new Photo_misc();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace NEfotobudka_githubik
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Verra_ceo_employee());
+            Application.Run(new Verra_ceo_menu());
         }
     }
 }

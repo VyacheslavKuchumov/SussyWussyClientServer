@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -71,11 +72,12 @@
             this.flowLayoutPanel1.Controls.Add(this.button3);
             this.flowLayoutPanel1.Controls.Add(this.button5);
             this.flowLayoutPanel1.Controls.Add(this.button6);
+            this.flowLayoutPanel1.Controls.Add(this.button7);
             this.flowLayoutPanel1.Controls.Add(this.button4);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(355, 192);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(347, 192);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(465, 257);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(481, 284);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // button1
@@ -142,7 +144,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(234, 3);
+            this.button5.Location = new System.Drawing.Point(3, 201);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(225, 60);
             this.button5.TabIndex = 4;
@@ -152,12 +154,23 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(234, 69);
+            this.button6.Location = new System.Drawing.Point(234, 3);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(225, 60);
             this.button6.TabIndex = 5;
-            this.button6.Text = "Документы";
+            this.button6.Text = "Аналитика";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(234, 69);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(225, 60);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "Отчетность";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Verra_ceo_menu
             // 
@@ -188,5 +201,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }

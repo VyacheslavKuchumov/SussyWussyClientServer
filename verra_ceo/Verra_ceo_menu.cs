@@ -26,5 +26,40 @@ namespace NEfotobudka_githubik.verra_ceo
             // Optionally, hide the current form
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            Verra_ceo_suppliers form = new Verra_ceo_suppliers();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            Verra_ceo_ostatki form = new Verra_ceo_ostatki();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void Verra_ceo_menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            Verra_ceo_studio form = new Verra_ceo_studio();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
     }
 }

@@ -15,8 +15,8 @@ namespace NEfotobudka_githubik.verra_ceo
     public partial class Verra_ceo_employee : Form
     {
         //
-        // ПОДКЛЮЧЕНИЕ К БАЗЕ БРОУ
-        private SqlConnection conn = new SqlConnection("Data Source=DESKTOP-E1GMR9K;Initial Catalog=Itogovaya;Integrated Security=True");
+        // ПОДКЛЮЧЕНИЕ К БАЗЕ БРОУ НЕ ТРОГАТБ
+        private SqlConnection conn = Connection.doConnection();
         // 
         // 
         // 
@@ -27,8 +27,13 @@ namespace NEfotobudka_githubik.verra_ceo
 
         private void Verra_ceo_employee_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'itogovayaDataSet.СОТРУДНИКИ' table. You can move, or remove it, as needed.
-            this.сОТРУДНИКИTableAdapter.Fill(this.itogovayaDataSet.СОТРУДНИКИ);
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM СОТРУДНИКИ", conn);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+            conn.Close();
 
         }
 

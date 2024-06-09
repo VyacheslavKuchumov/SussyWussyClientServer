@@ -1,5 +1,6 @@
 ﻿using NEfotobudka_githubik.admin;
 using NEfotobudka_githubik.ceo;
+using NEfotobudka_githubik.verra_ceo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace NEfotobudka_githubik
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CEO_suppliers());
+            Application.Run(new Verra_ceo_employee());
         }
     }
 }

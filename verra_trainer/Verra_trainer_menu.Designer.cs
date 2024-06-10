@@ -51,14 +51,14 @@
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.55556F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1178, 745);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1047, 596);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
             // flowLayoutPanel1
@@ -69,43 +69,51 @@
             this.flowLayoutPanel1.Controls.Add(this.button7);
             this.flowLayoutPanel1.Controls.Add(this.button4);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(347, 192);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(309, 153);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(481, 194);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(428, 155);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Location = new System.Drawing.Point(3, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 60);
+            this.button1.Size = new System.Drawing.Size(200, 48);
             this.button1.TabIndex = 0;
             this.button1.Text = "Расписание групповых занятий";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 69);
+            this.button2.Location = new System.Drawing.Point(3, 54);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(225, 60);
+            this.button2.Size = new System.Drawing.Size(200, 48);
             this.button2.TabIndex = 1;
             this.button2.Text = "Расписание индивидуальных занятий";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(234, 3);
+            this.button7.Location = new System.Drawing.Point(209, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(225, 60);
+            this.button7.Size = new System.Drawing.Size(200, 48);
             this.button7.TabIndex = 6;
             this.button7.Text = "Состав группы";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(234, 69);
+            this.button4.Location = new System.Drawing.Point(209, 54);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(225, 60);
+            this.button4.Size = new System.Drawing.Size(200, 48);
             this.button4.TabIndex = 3;
             this.button4.Text = "Выйти";
             this.button4.UseVisualStyleBackColor = true;
@@ -116,9 +124,10 @@
             this.flowLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel2.Controls.Add(this.label1);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(473, 34);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(421, 27);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(230, 94);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(204, 75);
             this.flowLayoutPanel2.TabIndex = 5;
             // 
             // label1
@@ -129,17 +138,18 @@
             this.label1.Location = new System.Drawing.Point(4, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 37);
+            this.label1.Size = new System.Drawing.Size(195, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Меню тренера";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Verra_trainer_menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1178, 745);
+            this.ClientSize = new System.Drawing.Size(1047, 596);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Verra_trainer_menu";
             this.Text = "Verra_trainer_menu";
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -45,5 +45,10 @@ namespace NEfotobudka_githubik.verra_ceo
             // Optionally, hide the current form
             this.Hide();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

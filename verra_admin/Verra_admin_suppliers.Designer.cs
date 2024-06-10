@@ -1,6 +1,6 @@
-﻿namespace NEfotobudka_githubik.verra_ceo
+﻿namespace NEfotobudka_githubik.verra_admin
 {
-    partial class Verra_ceo_suppliers
+    partial class Verra_admin_suppliers
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,17 +43,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.itogovayaDataSet1 = new NEfotobudka_githubik.ItogovayaDataSet1();
-            this.пОСТАВЩИКBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.пОСТАВЩИКTableAdapter = new NEfotobudka_githubik.ItogovayaDataSet1TableAdapters.ПОСТАВЩИКTableAdapter();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itogovayaDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.пОСТАВЩИКBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -68,7 +62,7 @@
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -76,8 +70,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.76704F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.29094F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1028, 579);
-            this.tableLayoutPanel1.TabIndex = 11;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.tableLayoutPanel1.TabIndex = 12;
             // 
             // flowLayoutPanel2
             // 
@@ -173,7 +166,6 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Назад";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // flowLayoutPanel3
             // 
@@ -202,7 +194,7 @@
             // textBoxSurname
             // 
             this.textBoxSurname.Location = new System.Drawing.Point(4, 36);
-            this.textBoxSurname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxSurname.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(132, 22);
             this.textBoxSurname.TabIndex = 12;
@@ -220,7 +212,7 @@
             // textBoxID
             // 
             this.textBoxID.Location = new System.Drawing.Point(4, 82);
-            this.textBoxID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxID.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(132, 22);
             this.textBoxID.TabIndex = 19;
@@ -229,36 +221,20 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(22, 122);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(984, 278);
             this.dataGridView1.TabIndex = 7;
             // 
-            // itogovayaDataSet1
-            // 
-            this.itogovayaDataSet1.DataSetName = "ItogovayaDataSet1";
-            this.itogovayaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // пОСТАВЩИКBindingSource
-            // 
-            this.пОСТАВЩИКBindingSource.DataMember = "ПОСТАВЩИК";
-            this.пОСТАВЩИКBindingSource.DataSource = this.itogovayaDataSet1;
-            // 
-            // пОСТАВЩИКTableAdapter
-            // 
-            this.пОСТАВЩИКTableAdapter.ClearBeforeFill = true;
-            // 
-            // Verra_ceo_suppliers
+            // Verra_admin_suppliers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 579);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Verra_ceo_suppliers";
-            this.Text = "Verra_ceo_suppliers";
-            this.Load += new System.EventHandler(this.Verra_ceo_suppliers_Load);
+            this.Name = "Verra_admin_suppliers";
+            this.Text = "Verra_admin_suppliers";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
@@ -267,8 +243,6 @@
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itogovayaDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.пОСТАВЩИКBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -290,8 +264,5 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private ItogovayaDataSet1 itogovayaDataSet1;
-        private System.Windows.Forms.BindingSource пОСТАВЩИКBindingSource;
-        private ItogovayaDataSet1TableAdapters.ПОСТАВЩИКTableAdapter пОСТАВЩИКTableAdapter;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace NEfotobudka_githubik.verra_admin
 {
-    partial class Verra_admin_programms
+    partial class Verra_admin_group
     {
         /// <summary>
         /// Required designer variable.
@@ -62,16 +62,16 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.76704F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.29094F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1156, 724);
-            this.tableLayoutPanel1.TabIndex = 11;
+            this.tableLayoutPanel1.TabIndex = 12;
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel2.Controls.Add(this.label1);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(459, 34);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(473, 34);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(238, 84);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(210, 84);
             this.flowLayoutPanel2.TabIndex = 5;
             // 
             // label1
@@ -82,9 +82,9 @@
             this.label1.Location = new System.Drawing.Point(4, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 37);
+            this.label1.Size = new System.Drawing.Size(182, 74);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Программы";
+            this.label1.Text = "Групповое расписание";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tableLayoutPanel3
@@ -141,16 +141,15 @@
             this.dataGridView1.Size = new System.Drawing.Size(1108, 348);
             this.dataGridView1.TabIndex = 7;
             // 
-            // Verra_admin_programms
+            // Verra_admin_group
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1156, 724);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Verra_admin_programms";
-            this.Text = "Verra_admin_programms";
-            this.Load += new System.EventHandler(this.Verra_admin_programms_Load);
+            this.Name = "Verra_admin_group";
+            this.Text = "Verra_admin_group";
+            this.Load += new System.EventHandler(this.Verra_admin_group_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();

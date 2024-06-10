@@ -70,7 +70,7 @@ namespace NEfotobudka_githubik.verra_admin
         private void button6_Click_1(object sender, EventArgs e)
         {
             // Instantiate the second form
-            Verra_admin_schedule form = new Verra_admin_schedule();
+            Verra_admin_group form = new Verra_admin_group();
             // Show the second form
             form.Show();
             // Optionally, hide the current form
@@ -81,6 +81,16 @@ namespace NEfotobudka_githubik.verra_admin
         {
             // Instantiate the second form
             Verra_admin_programms form = new Verra_admin_programms();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            Verra_admin_individ form = new Verra_admin_individ();
             // Show the second form
             form.Show();
             // Optionally, hide the current form

@@ -32,33 +32,29 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxSurname = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.itogovayaDataSet = new NEfotobudka_githubik.ItogovayaDataSet();
             this.сОТРУДНИКИBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.сОТРУДНИКИTableAdapter = new NEfotobudka_githubik.ItogovayaDataSetTableAdapters.СОТРУДНИКИTableAdapter();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxSurname = new System.Windows.Forms.TextBox();
             this.tableAdapterManager1 = new NEfotobudka_githubik.ItogovayaDataSetTableAdapters.TableAdapterManager();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBoxID = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.itogovayaDataSet1 = new NEfotobudka_githubik.ItogovayaDataSet1();
             this.сОТРУДНИКИBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.сОТРУДНИКИTableAdapter1 = new NEfotobudka_githubik.ItogovayaDataSet1TableAdapters.СОТРУДНИКИTableAdapter();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itogovayaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.сОТРУДНИКИBindingSource)).BeginInit();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itogovayaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.сОТРУДНИКИBindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -108,37 +104,57 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // dataGridView1
+            // tableLayoutPanel3
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 153);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(1108, 348);
-            this.dataGridView1.TabIndex = 7;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 545F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel1, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel3, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(23, 509);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1110, 212);
+            this.tableLayoutPanel3.TabIndex = 9;
             // 
-            // itogovayaDataSet
+            // flowLayoutPanel1
             // 
-            this.itogovayaDataSet.DataSetName = "ItogovayaDataSet";
-            this.itogovayaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.button5);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(696, 3);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(283, 200);
+            this.flowLayoutPanel1.TabIndex = 4;
             // 
-            // сОТРУДНИКИBindingSource
+            // button1
             // 
-            this.сОТРУДНИКИBindingSource.DataMember = "СОТРУДНИКИ";
-            this.сОТРУДНИКИBindingSource.DataSource = this.itogovayaDataSet;
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(265, 61);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Поиск по фамилии";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // сОТРУДНИКИTableAdapter
+            // button5
             // 
-            this.сОТРУДНИКИTableAdapter.ClearBeforeFill = true;
+            this.button5.Location = new System.Drawing.Point(3, 70);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(265, 64);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Назад";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel3.Controls.Add(this.label2);
             this.flowLayoutPanel3.Controls.Add(this.textBoxSurname);
-            this.flowLayoutPanel3.Controls.Add(this.label5);
-            this.flowLayoutPanel3.Controls.Add(this.textBoxID);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(201, 3);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
@@ -163,98 +179,35 @@
             this.textBoxSurname.Size = new System.Drawing.Size(148, 26);
             this.textBoxSurname.TabIndex = 12;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(24, 153);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.Size = new System.Drawing.Size(1108, 348);
+            this.dataGridView1.TabIndex = 7;
+            // 
+            // itogovayaDataSet
+            // 
+            this.itogovayaDataSet.DataSetName = "ItogovayaDataSet";
+            this.itogovayaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // сОТРУДНИКИBindingSource
+            // 
+            this.сОТРУДНИКИBindingSource.DataMember = "СОТРУДНИКИ";
+            this.сОТРУДНИКИBindingSource.DataSource = this.itogovayaDataSet;
+            // 
+            // сОТРУДНИКИTableAdapter
+            // 
+            this.сОТРУДНИКИTableAdapter.ClearBeforeFill = true;
+            // 
             // tableAdapterManager1
             // 
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager1.UpdateOrder = NEfotobudka_githubik.ItogovayaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager1.СОТРУДНИКИTableAdapter = this.сОТРУДНИКИTableAdapter;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Controls.Add(this.button5);
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(696, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(283, 200);
-            this.flowLayoutPanel1.TabIndex = 4;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(3, 138);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(265, 37);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Назад";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(265, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Поиск по фамилии";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 545F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel1, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel3, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(23, 509);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1110, 212);
-            this.tableLayoutPanel3.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 56);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 20);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Код ";
-            // 
-            // textBoxID
-            // 
-            this.textBoxID.Location = new System.Drawing.Point(4, 81);
-            this.textBoxID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxID.Name = "textBoxID";
-            this.textBoxID.Size = new System.Drawing.Size(148, 26);
-            this.textBoxID.TabIndex = 19;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(3, 45);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(265, 40);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Уволить по коду";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(3, 91);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(265, 41);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Принять на работу";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // itogovayaDataSet1
             // 
@@ -282,13 +235,13 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itogovayaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.сОТРУДНИКИBindingSource)).EndInit();
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel3.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.itogovayaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.сОТРУДНИКИBindingSource1)).EndInit();
             this.ResumeLayout(false);
@@ -312,10 +265,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxID;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private ItogovayaDataSet1 itogovayaDataSet1;
         private System.Windows.Forms.BindingSource сОТРУДНИКИBindingSource1;
         private ItogovayaDataSet1TableAdapters.СОТРУДНИКИTableAdapter сОТРУДНИКИTableAdapter1;

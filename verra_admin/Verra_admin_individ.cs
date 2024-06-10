@@ -9,9 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NEfotobudka_githubik.verra_trainer
+namespace NEfotobudka_githubik.verra_admin
 {
-    public partial class Verra_trainer_ind_schedule : Form
+    public partial class Verra_admin_individ : Form
     {
         //
         // ПОДКЛЮЧЕНИЕ К БАЗЕ БРОУ НЕ ТРОГАТБ
@@ -19,12 +19,12 @@ namespace NEfotobudka_githubik.verra_trainer
         // 
         // 
         //
-        public Verra_trainer_ind_schedule()
+        public Verra_admin_individ()
         {
             InitializeComponent();
         }
 
-        private void Verra_trainer_ind_schedule_Load(object sender, EventArgs e)
+        private void Verra_admin_individ_Load(object sender, EventArgs e)
         {
             conn.Open();
             SqlCommand cmd = new SqlCommand("SELECT * FROM [РАСПИСАНИЕ ИНДИВИД]", conn);
@@ -38,7 +38,7 @@ namespace NEfotobudka_githubik.verra_trainer
         private void button5_Click(object sender, EventArgs e)
         {
             // Instantiate the second form
-            Verra_trainer_menu form = new Verra_trainer_menu();
+            Verra_admin_menu form = new Verra_admin_menu();
             // Show the second form
             form.Show();
             // Optionally, hide the current form

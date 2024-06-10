@@ -38,7 +38,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxSurname = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.itogovayaDataSet1 = new NEfotobudka_githubik.ItogovayaDataSet1();
             this.пОСТАВЩИКBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -136,6 +136,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Поиск по названию";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button5
             // 
@@ -152,7 +153,7 @@
             // 
             this.flowLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel3.Controls.Add(this.label2);
-            this.flowLayoutPanel3.Controls.Add(this.textBoxSurname);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxName);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(201, 2);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -170,13 +171,13 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Название поставщика";
             // 
-            // textBoxSurname
+            // textBoxName
             // 
-            this.textBoxSurname.Location = new System.Drawing.Point(4, 45);
-            this.textBoxSurname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxSurname.Name = "textBoxSurname";
-            this.textBoxSurname.Size = new System.Drawing.Size(148, 26);
-            this.textBoxSurname.TabIndex = 12;
+            this.textBoxName.Location = new System.Drawing.Point(4, 45);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(148, 26);
+            this.textBoxName.TabIndex = 12;
             // 
             // dataGridView1
             // 
@@ -237,7 +238,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxSurname;
+        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.DataGridView dataGridView1;
         private ItogovayaDataSet1 itogovayaDataSet1;
         private System.Windows.Forms.BindingSource пОСТАВЩИКBindingSource;

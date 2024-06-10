@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,12 @@ namespace NEfotobudka_githubik.verra_ceo
 {
     public partial class Verra_ceo_otchetik : Form
     {
+        //
+        // ПОДКЛЮЧЕНИЕ К БАЗЕ БРОУ НЕ ТРОГАТБ
+        private SqlConnection conn = Connection.doConnection();
+        // 
+        // 
+        // 
         public Verra_ceo_otchetik()
         {
             InitializeComponent();
@@ -19,7 +26,15 @@ namespace NEfotobudka_githubik.verra_ceo
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT Код_сотрудника, Имя_сотрудника, Фамилия_сотрудника, Отчество_сотрудника, Телефон_сотрудника, Дата_начала_работы_в_компании\r\nFROM СОТРУДНИКИ\r\nWHERE Дата_начала_работы_в_компании BETWEEN @start AND @end\r\nAND Должность NOT LIKE 'директор';\r\n", conn);
+            cmd.Parameters.AddWithValue("@start", dateTimePicker1.Value.ToString("yyyy-MM-dd"));
+            cmd.Parameters.AddWithValue("@end", dateTimePicker2.Value.ToString("yyyy-MM-dd"));
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+            conn.Close();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -30,6 +45,19 @@ namespace NEfotobudka_githubik.verra_ceo
             form.Show();
             // Optionally, hide the current form
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT ИНВЕНТАРЬ.Код_инвентаря, ИНВЕНТАРЬ.Наименование, ИНВЕНТАРЬ.Дата_покупки, ПОСТАВКА.Код_поставки, ПОСТАВКА.Количество, ПОСТАВКА.Дата_поставки\r\nFROM ИНВЕНТАРЬ INNER JOIN ПОСТАВКА ON ИНВЕНТАРЬ.Код_поставки = ПОСТАВКА.Код_поставки\r\nWHERE ИНВЕНТАРЬ.Дата_покупки BETWEEN @start AND @end;\r\n", conn);
+            cmd.Parameters.AddWithValue("@start", dateTimePicker1.Value.ToString("yyyy-MM-dd"));
+            cmd.Parameters.AddWithValue("@end", dateTimePicker2.Value.ToString("yyyy-MM-dd"));
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+            conn.Close();
         }
     }
 }

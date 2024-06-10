@@ -44,5 +44,32 @@ namespace NEfotobudka_githubik.verra_admin
             // Optionally, hide the current form
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBoxSurname.Text == "")
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM КЛИЕНТЫ", conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dataGridView1.DataSource = dt;
+                conn.Close();
+
+            }
+            else
+            {
+
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM КЛИЕНТЫ WHERE Фамилия_клиента = @surname", conn);
+                cmd.Parameters.AddWithValue("@surname", textBoxSurname.Text);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dataGridView1.DataSource = dt;
+                conn.Close();
+            }
+        }
     }
 }

@@ -81,5 +81,15 @@ namespace NEfotobudka_githubik.verra_ceo
             // Optionally, hide the current form
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            Vhod form = new Vhod();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
     }
 }

@@ -68,9 +68,9 @@
             this.flowLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel2.Controls.Add(this.label1);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(474, 34);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(405, 34);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(208, 84);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(345, 84);
             this.flowLayoutPanel2.TabIndex = 5;
             // 
             // label1
@@ -81,9 +81,9 @@
             this.label1.Location = new System.Drawing.Point(4, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 74);
+            this.label1.Size = new System.Drawing.Size(330, 74);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Остатки инвентаря";
+            this.label1.Text = "Остатки инвентаря на сегодняшний день";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tableLayoutPanel3

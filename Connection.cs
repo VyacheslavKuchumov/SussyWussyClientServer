@@ -10,7 +10,7 @@ namespace NEfotobudka_githubik
     public class Connection
     {
         public static SqlConnection doConnection() {
-            SqlConnection conn = new SqlConnection("Data Source=LAPTOP-4UKE35JP;Initial Catalog=Itogovaya;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DESKTOP-E1GMR9K;Initial Catalog=Itogovaya;Integrated Security=True");
             // 
             return conn;
         }

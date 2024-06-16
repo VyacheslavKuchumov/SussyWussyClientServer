@@ -51,11 +51,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxCodeStudio = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBoxD = new System.Windows.Forms.TextBox();
+            this.textBoxDateOfStart = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxOklad = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxProfession = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -142,11 +142,11 @@
             this.flowLayoutPanel3.Controls.Add(this.label5);
             this.flowLayoutPanel3.Controls.Add(this.textBoxCodeStudio);
             this.flowLayoutPanel3.Controls.Add(this.label10);
-            this.flowLayoutPanel3.Controls.Add(this.textBoxD);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxDateOfStart);
             this.flowLayoutPanel3.Controls.Add(this.label11);
-            this.flowLayoutPanel3.Controls.Add(this.textBox3);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxOklad);
             this.flowLayoutPanel3.Controls.Add(this.label12);
-            this.flowLayoutPanel3.Controls.Add(this.textBox4);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxProfession);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 2);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -284,6 +284,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Принять на работу";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button5
             // 
@@ -323,13 +324,13 @@
             this.label10.TabIndex = 27;
             this.label10.Text = "Дата начала работы в компании";
             // 
-            // textBoxD
+            // textBoxDateOfStart
             // 
-            this.textBoxD.Location = new System.Drawing.Point(4, 342);
-            this.textBoxD.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxD.Name = "textBoxD";
-            this.textBoxD.Size = new System.Drawing.Size(132, 22);
-            this.textBoxD.TabIndex = 28;
+            this.textBoxDateOfStart.Location = new System.Drawing.Point(4, 342);
+            this.textBoxDateOfStart.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDateOfStart.Name = "textBoxDateOfStart";
+            this.textBoxDateOfStart.Size = new System.Drawing.Size(132, 22);
+            this.textBoxDateOfStart.TabIndex = 28;
             // 
             // label11
             // 
@@ -341,13 +342,13 @@
             this.label11.TabIndex = 29;
             this.label11.Text = "Оклад";
             // 
-            // textBox3
+            // textBoxOklad
             // 
-            this.textBox3.Location = new System.Drawing.Point(231, 20);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(132, 22);
-            this.textBox3.TabIndex = 30;
+            this.textBoxOklad.Location = new System.Drawing.Point(231, 20);
+            this.textBoxOklad.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOklad.Name = "textBoxOklad";
+            this.textBoxOklad.Size = new System.Drawing.Size(132, 22);
+            this.textBoxOklad.TabIndex = 30;
             // 
             // label12
             // 
@@ -359,13 +360,13 @@
             this.label12.TabIndex = 31;
             this.label12.Text = "Должность";
             // 
-            // textBox4
+            // textBoxProfession
             // 
-            this.textBox4.Location = new System.Drawing.Point(231, 66);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(132, 22);
-            this.textBox4.TabIndex = 32;
+            this.textBoxProfession.Location = new System.Drawing.Point(231, 66);
+            this.textBoxProfession.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxProfession.Name = "textBoxProfession";
+            this.textBoxProfession.Size = new System.Drawing.Size(132, 22);
+            this.textBoxProfession.TabIndex = 32;
             // 
             // Verra_ceo_addEmployee
             // 
@@ -411,10 +412,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxCodeStudio;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBoxD;
+        private System.Windows.Forms.TextBox textBoxDateOfStart;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxOklad;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxProfession;
     }
 }

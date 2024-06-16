@@ -50,7 +50,7 @@ namespace NEfotobudka_githubik.verra_ceo
         private void button1_Click(object sender, EventArgs e)
         {
             conn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT ИНВЕНТАРЬ.Код_инвентаря, ИНВЕНТАРЬ.Наименование, ИНВЕНТАРЬ.Дата_покупки, ПОСТАВКА.Код_поставки, ПОСТАВКА.Количество, ПОСТАВКА.Дата_поставки\r\nFROM ИНВЕНТАРЬ INNER JOIN ПОСТАВКА ON ИНВЕНТАРЬ.Код_поставки = ПОСТАВКА.Код_поставки\r\nWHERE ИНВЕНТАРЬ.Дата_покупки BETWEEN @start AND @end;\r\n", conn);
+            SqlCommand cmd = new SqlCommand("SELECT ИНВЕНТАРЬ.Код_инвентаря, ИНВЕНТАРЬ.Наименование, ПОСТАВКА.Код_поставки, ИНВЕНТАРЬ.Количество, ПОСТАВКА.Дата_поставки\r\nFROM ИНВЕНТАРЬ INNER JOIN ПОСТАВКА ON ИНВЕНТАРЬ.Код_поставки = ПОСТАВКА.Код_поставки\r\nWHERE ПОСТАВКА.Дата_поставки BETWEEN @start AND @end;\r\n", conn);
             cmd.Parameters.AddWithValue("@start", dateTimePicker1.Value.ToString("yyyy-MM-dd"));
             cmd.Parameters.AddWithValue("@end", dateTimePicker2.Value.ToString("yyyy-MM-dd"));
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);

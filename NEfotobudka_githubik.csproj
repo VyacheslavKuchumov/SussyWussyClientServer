@@ -201,6 +201,12 @@
     <Compile Include="verra_admin\Verra_admin_menu.Designer.cs">
       <DependentUpon>Verra_admin_menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="verra_ceo\Verra_ceo_addSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verra_ceo\Verra_ceo_addSupplier.Designer.cs">
+      <DependentUpon>Verra_ceo_addSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="verra_ceo\Verra_ceo_analytics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -350,6 +356,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="verra_admin\Verra_admin_menu.resx">
       <DependentUpon>Verra_admin_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verra_ceo\Verra_ceo_addSupplier.resx">
+      <DependentUpon>Verra_ceo_addSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="verra_ceo\Verra_ceo_analytics.resx">
       <DependentUpon>Verra_ceo_analytics.cs</DependentUpon>

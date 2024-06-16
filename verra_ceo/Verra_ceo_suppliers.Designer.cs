@@ -43,6 +43,7 @@
             this.itogovayaDataSet1 = new NEfotobudka_githubik.ItogovayaDataSet1();
             this.пОСТАВЩИКBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.пОСТАВЩИКTableAdapter = new NEfotobudka_githubik.ItogovayaDataSet1TableAdapters.ПОСТАВЩИКTableAdapter();
+            this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -119,6 +120,7 @@
             // 
             this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Controls.Add(this.button5);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(695, 2);
@@ -132,7 +134,7 @@
             this.button1.Location = new System.Drawing.Point(3, 2);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(266, 69);
+            this.button1.Size = new System.Drawing.Size(266, 47);
             this.button1.TabIndex = 0;
             this.button1.Text = "Поиск по названию";
             this.button1.UseVisualStyleBackColor = true;
@@ -140,10 +142,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(3, 75);
+            this.button5.Location = new System.Drawing.Point(3, 96);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(266, 69);
+            this.button5.Size = new System.Drawing.Size(266, 39);
             this.button5.TabIndex = 4;
             this.button5.Text = "Назад";
             this.button5.UseVisualStyleBackColor = true;
@@ -203,6 +205,16 @@
             // 
             this.пОСТАВЩИКTableAdapter.ClearBeforeFill = true;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(3, 53);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(266, 39);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Регистрация поставщика";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Verra_ceo_suppliers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -243,5 +255,6 @@
         private ItogovayaDataSet1 itogovayaDataSet1;
         private System.Windows.Forms.BindingSource пОСТАВЩИКBindingSource;
         private ItogovayaDataSet1TableAdapters.ПОСТАВЩИКTableAdapter пОСТАВЩИКTableAdapter;
+        private System.Windows.Forms.Button button2;
     }
 }

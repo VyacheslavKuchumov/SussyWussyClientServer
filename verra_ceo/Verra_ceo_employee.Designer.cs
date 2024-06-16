@@ -48,6 +48,9 @@
             this.сОТРУДНИКИBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.сОТРУДНИКИTableAdapter1 = new NEfotobudka_githubik.ItogovayaDataSet1TableAdapters.СОТРУДНИКИTableAdapter();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxID = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -76,9 +79,9 @@
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.94202F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.76704F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.29094F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1028, 579);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.24242F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.93939F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1028, 685);
             this.tableLayoutPanel1.TabIndex = 10;
             // 
             // flowLayoutPanel2
@@ -114,25 +117,26 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.flowLayoutPanel3, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(21, 406);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(21, 429);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(986, 170);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(986, 245);
             this.tableLayoutPanel3.TabIndex = 9;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.button5);
             this.flowLayoutPanel1.Controls.Add(this.button2);
+            this.flowLayoutPanel1.Controls.Add(this.button3);
+            this.flowLayoutPanel1.Controls.Add(this.button5);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(618, 2);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(252, 160);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(252, 229);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // button1
@@ -148,7 +152,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(3, 46);
+            this.button5.Location = new System.Drawing.Point(3, 124);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(236, 33);
@@ -162,6 +166,8 @@
             this.flowLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanel3.Controls.Add(this.label2);
             this.flowLayoutPanel3.Controls.Add(this.textBoxSurname);
+            this.flowLayoutPanel3.Controls.Add(this.label3);
+            this.flowLayoutPanel3.Controls.Add(this.textBoxID);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(178, 2);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -190,7 +196,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 122);
+            this.dataGridView1.Location = new System.Drawing.Point(22, 140);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
@@ -233,19 +239,49 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 83);
+            this.button2.Location = new System.Drawing.Point(3, 46);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(236, 35);
             this.button2.TabIndex = 5;
             this.button2.Text = "Принять на работу";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(3, 85);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(236, 35);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Уволить по коду";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(4, 46);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 16);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Код";
+            // 
+            // textBoxID
+            // 
+            this.textBoxID.Location = new System.Drawing.Point(4, 66);
+            this.textBoxID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(132, 22);
+            this.textBoxID.TabIndex = 14;
             // 
             // Verra_ceo_employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 579);
+            this.ClientSize = new System.Drawing.Size(1028, 685);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Verra_ceo_employee";
@@ -288,5 +324,8 @@
         private System.Windows.Forms.BindingSource сОТРУДНИКИBindingSource1;
         private ItogovayaDataSet1TableAdapters.СОТРУДНИКИTableAdapter сОТРУДНИКИTableAdapter1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxID;
     }
 }

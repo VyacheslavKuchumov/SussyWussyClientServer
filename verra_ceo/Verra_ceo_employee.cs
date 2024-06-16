@@ -90,5 +90,42 @@ namespace NEfotobudka_githubik.verra_ceo
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            Verra_ceo_addEmployee form = new Verra_ceo_addEmployee();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            if (textBoxID.Text == "")
+            {
+                MessageBox.Show("Введите код");
+            }
+            else
+            {
+
+                
+                conn.Open();
+
+
+                SqlCommand cmd = new SqlCommand("DELETE FROM СОТРУДНИКИ WHERE Код_сотрудника = @id", conn);
+                cmd.Parameters.AddWithValue("@id", textBoxID.Text);
+                cmd.ExecuteNonQuery();
+
+                cmd = new SqlCommand("SELECT * FROM СОТРУДНИКИ", conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dataGridView1.DataSource = dt;
+                conn.Close();
+
+            }
+        }
     }
 }

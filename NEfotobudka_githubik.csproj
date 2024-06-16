@@ -207,6 +207,12 @@
     <Compile Include="verra_ceo\Verra_ceo_addEmployee.Designer.cs">
       <DependentUpon>Verra_ceo_addEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="verra_ceo\Verra_ceo_addSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verra_ceo\Verra_ceo_addSupplier.Designer.cs">
+      <DependentUpon>Verra_ceo_addSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="verra_ceo\Verra_ceo_analytics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,12 @@
     </Compile>
     <Compile Include="verra_ceo\Verra_ceo_menu.Designer.cs">
       <DependentUpon>Verra_ceo_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verra_ceo\Verra_ceo_orderShiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verra_ceo\Verra_ceo_orderShiet.Designer.cs">
+      <DependentUpon>Verra_ceo_orderShiet.cs</DependentUpon>
     </Compile>
     <Compile Include="verra_ceo\Verra_ceo_ostatki.cs">
       <SubType>Form</SubType>
@@ -360,6 +372,9 @@
     <EmbeddedResource Include="verra_ceo\Verra_ceo_addEmployee.resx">
       <DependentUpon>Verra_ceo_addEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="verra_ceo\Verra_ceo_addSupplier.resx">
+      <DependentUpon>Verra_ceo_addSupplier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="verra_ceo\Verra_ceo_analytics.resx">
       <DependentUpon>Verra_ceo_analytics.cs</DependentUpon>
     </EmbeddedResource>
@@ -368,6 +383,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="verra_ceo\Verra_ceo_menu.resx">
       <DependentUpon>Verra_ceo_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verra_ceo\Verra_ceo_orderShiet.resx">
+      <DependentUpon>Verra_ceo_orderShiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="verra_ceo\Verra_ceo_ostatki.resx">
       <DependentUpon>Verra_ceo_ostatki.cs</DependentUpon>

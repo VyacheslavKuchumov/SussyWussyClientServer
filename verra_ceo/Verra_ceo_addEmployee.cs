@@ -32,19 +32,40 @@ namespace NEfotobudka_githubik.verra_ceo
         {
             
             conn.Open();
-            SqlCommand cmd = new SqlCommand("INSERT INTO СОТРУДНИКИ VALUES(@surname, @name, @otchestvo, @photostudio, @dayOfBirth, @position, @phone)", conn);
+            SqlCommand cmd = new SqlCommand("INSERT INTO СОТРУДНИКИ VALUES(@surname, @name, @otchestvo, @Dob, @Pol, @phone, @CodeStudio, @DateOfStart, @Oklad, @Profession)", conn);
             cmd.Parameters.AddWithValue("@surname", textBoxSurname.Text);
             cmd.Parameters.AddWithValue("@name", textBoxName.Text);
             cmd.Parameters.AddWithValue("@otchestvo", textBoxOtchestvo.Text);
-            cmd.Parameters.AddWithValue("@photostudio", textBoxPhotostudio.Text);
-            cmd.Parameters.AddWithValue("@dayOfBirth", textBoxDOB.Text);
-            cmd.Parameters.AddWithValue("@position", textBoxPosition.Text);
+            cmd.Parameters.AddWithValue("@Dob", textBoxDob.Text);
+            cmd.Parameters.AddWithValue("@Pol", textBoxPol.Text);
             cmd.Parameters.AddWithValue("@phone", textBoxPhone.Text);
+            cmd.Parameters.AddWithValue("@CodeStudio", textBoxCodeStudio.Text);
+            cmd.Parameters.AddWithValue("@DateOfStart", textBoxDateOfStart.Text);
+            cmd.Parameters.AddWithValue("@Oklad", textBoxOklad.Text);
+            cmd.Parameters.AddWithValue("@Profession", textBoxProfession.Text);
 
             cmd.ExecuteNonQuery();
 
            
             conn.Close();
+
+            MessageBox.Show("Сотрудник принят на работу");
+            // Instantiate the second form
+            Verra_ceo_employee form = new Verra_ceo_employee();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            Verra_ceo_employee form = new Verra_ceo_employee();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
         }
     }
 }
